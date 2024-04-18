@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const readline = require('readline');
+const inquirer = require('inquirer');
 
 // Define the README template
 const README_TEMPLATE = `# {project_name}
