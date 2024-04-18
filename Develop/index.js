@@ -1,33 +1,33 @@
 // TODO: Include packages needed for this application
 
 const fs = require('fs');
-const readline = require('readline');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown')
 
 // Define the README template
-const README_TEMPLATE = `# {project_name}
+// const README_TEMPLATE = `# {project_name}
 
-{description}
+// {description}
 
-## Table of Contents
-{table_of_contents}
+// ## Table of Contents
+// {table_of_contents}
 
-## Installation
-{installation_instructions}
+// ## Installation
+// {installation_instructions}
 
-## Usage
-{usage_instructions}
+// ## Usage
+// {usage_instructions}
 
-## License
-This project is licensed under the {license} License.
+// ## License
+// This project is licensed under the {license} License.
 
-## Contributions
-{contributions}
+// ## Contributions
+// {contributions}
 
-## Testing
-{test_instructions}
+// ## Testing
+// {test_instructions}
 
-`;
+// `;
 
 // Function to generate README
 function generateReadme() {
