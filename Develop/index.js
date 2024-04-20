@@ -36,7 +36,7 @@ const questions = [
     },
 
     {
-        name: 'contributions',
+        name: 'credits',
         message: 'Include contributions made, as well as credits for the project.'
     },
 
@@ -59,7 +59,7 @@ function ask() {
         console.log('Answer', answers)
         const markdown = generateMarkdown(answers)
 
-        writeToFile('README.md', markdown)
+        writeToFile('new_README.md', markdown)
     })
     .catch((err) => {
         console.log(err)
